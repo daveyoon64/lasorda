@@ -32,6 +32,7 @@ while True:
     # receive a connection (new socket object) so you can send and receive data
     # and address which is bound to socket on the other end of connection
     client_connection, client_address = server_socket.accept()
+    print(f"DEBUG: {client_address}")
 
     # Get the client request
     # Receive data from the socket. Return is a bytes object representing data received
